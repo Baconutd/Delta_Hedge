@@ -1,13 +1,13 @@
 export class AnalyticsEngine {
-  async initialize(): Promise<void> {
-    // TODO: Implement initialization
+  public async initialize(): Promise<void> {
+    throw new Error('AnalyticsEngine.initialize() is not implemented');
   }
 
-  async start(): Promise<void> {
-    // TODO: Implement start logic
+  public async start(): Promise<void> {
+    throw new Error('AnalyticsEngine.start() is not implemented');
   }
 
-  async stop(): Promise<void> {
-    // TODO: Implement stop logic
+  public async stop(): Promise<void> {
+    throw new Error('AnalyticsEngine.stop() is not implemented');
   }
 }

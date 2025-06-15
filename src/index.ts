@@ -26,12 +26,18 @@ class DeltaHedgeSystem {
     try {
       this.logger.info('Starting Delta Hedge System...');
 
-      // Initialize components
-      await this.dataPipeline.initialize();
-      await this.marketMakingEngine.initialize();
-      await this.hedgingEngine.initialize();
-      await this.riskManager.initialize();
-      await this.analyticsEngine.initialize();
+      // Initialise all in parallel
+      await Promise.all([
+      // Initialise all in parallel
+      await Promise.all([
+      // Initialise all in parallel
+      await Promise.all([
+        this.dataPipeline.initialize(),
+        this.marketMakingEngine.initialize(),
+        this.hedgingEngine.initialize(),
+        this.riskManager.initialize(),
+        this.analyticsEngine.initialize()
+      ]);
 
       // Start components
       await this.dataPipeline.start();
@@ -52,11 +58,13 @@ class DeltaHedgeSystem {
       this.logger.info('Stopping Delta Hedge System...');
 
       // Stop components in reverse order
-      await this.analyticsEngine.stop();
-      await this.riskManager.stop();
-      await this.hedgingEngine.stop();
-      await this.marketMakingEngine.stop();
-      await this.dataPipeline.stop();
+      await Promise.allSettled([
+        this.analyticsEngine.stop(),
+        this.riskManager.stop(),
+        this.hedgingEngine.stop(),
+        this.marketMakingEngine.stop(),
+        this.dataPipeline.stop()
+      ]);
 
       this.logger.info('Delta Hedge System stopped successfully');
     } catch (error) {

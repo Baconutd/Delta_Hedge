@@ -45,7 +45,10 @@ export const loadConfig = (): Config => {
     },
     risk: {
       maxPositionSize: Number(process.env.MAX_POSITION_SIZE) || 1.0,
-      maxDrawdown: Number(process.env.MAX_DRAWDOWN) || 0.1,
+      maxDrawdown:
+   process.env.MAX_DRAWDOWN !== undefined
+     ? Number(process.env.MAX_DRAWDOWN)
+     : 0.1,
       stopLossPercentage: Number(process.env.STOP_LOSS_PERCENTAGE) || 0.05,
       maxLeverage: Number(process.env.MAX_LEVERAGE) || 1.0,
     },
