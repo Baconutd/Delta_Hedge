@@ -5,7 +5,7 @@
       "description": "Initial project setup and environment configuration"
     },
     "setup:init": {
-      "command": "npm install",
+      "command": "node scripts/setup-init.js",
       "description": "Install project dependencies"
     },
     "setup:config": {

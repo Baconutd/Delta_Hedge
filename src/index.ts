@@ -3,7 +3,6 @@ import { HedgingEngine } from './hedging/engine';
 import { RiskManager } from './risk/manager';
 import { AnalyticsEngine } from './analytics/engine';
 import { DataPipeline } from './data/pipeline';
-import { Config } from './config';
 import { Logger } from './utils/logger';
 
 class DeltaHedgeSystem {
@@ -26,7 +25,7 @@ class DeltaHedgeSystem {
   public async start(): Promise<void> {
     try {
       this.logger.info('Starting Delta Hedge System...');
-      
+
       // Initialize components
       await this.dataPipeline.initialize();
       await this.marketMakingEngine.initialize();
@@ -51,7 +50,7 @@ class DeltaHedgeSystem {
   public async stop(): Promise<void> {
     try {
       this.logger.info('Stopping Delta Hedge System...');
-      
+
       // Stop components in reverse order
       await this.analyticsEngine.stop();
       await this.riskManager.stop();
@@ -77,4 +76,4 @@ if (require.main === module) {
     console.error('Fatal error:', error);
     process.exit(1);
   });
-} 
+}

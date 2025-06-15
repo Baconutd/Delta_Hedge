@@ -25,10 +25,10 @@ describe('DeltaHedgeSystem', () => {
 
   it('should handle errors during shutdown', async () => {
     await system.start();
-    
+
     // Mock a component to throw an error during shutdown
     jest.spyOn(system['analyticsEngine'], 'stop').mockRejectedValue(new Error('Test error'));
 
     await expect(system.stop()).rejects.toThrow('Test error');
   });
-}); 
+});

@@ -58,4 +58,4 @@ export const loadConfig = (): Config => {
     environment: (process.env.NODE_ENV as 'development' | 'production') || 'development',
     logLevel: (process.env.LOG_LEVEL as 'debug' | 'info' | 'warn' | 'error') || 'info',
   };
-}; 
+};

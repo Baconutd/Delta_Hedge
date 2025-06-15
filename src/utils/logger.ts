@@ -22,4 +22,4 @@ export class Logger {
       console.debug(`[DEBUG] [${this.context}] ${message}`, ...args);
     }
   }
-} 
+}
