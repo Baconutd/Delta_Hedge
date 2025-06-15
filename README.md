@@ -1,5 +1,7 @@
 # Delta-Neutral Market Making System
 
+![CodeRabbit Pull Request Reviews](https://img.shields.io/coderabbit/prs/github/Baconutd/Delta_Hedge?utm_source=oss&utm_medium=github&utm_campaign=Baconutd%2FDelta_Hedge&labelColor=171717&color=FF570A&link=https%3A%2F%2Fcoderabbit.ai&label=CodeRabbit+Reviews)
+
 A sophisticated automated trading system that executes market-making strategies on BitMart while maintaining delta-neutral positions through real-time hedging on Bybit.
 
 ## Project Overview
