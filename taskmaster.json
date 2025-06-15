@@ -1,0 +1,250 @@
+{
+  "tasks": {
+    "setup": {
+      "command": "echo 'Setting up development environment'",
+      "description": "Initial project setup and environment configuration"
+    },
+    "setup:init": {
+      "command": "npm install",
+      "description": "Install project dependencies"
+    },
+    "setup:config": {
+      "command": "echo 'Creating configuration files'",
+      "description": "Set up configuration files for exchanges and environment variables"
+    },
+    "setup:config:env": {
+      "command": "echo 'Creating .env file'",
+      "description": "Create and configure environment variables file"
+    },
+    "setup:config:exchanges": {
+      "command": "echo 'Creating exchange configs'",
+      "description": "Create exchange API configuration files"
+    },
+    "setup:config:risk": {
+      "command": "echo 'Creating risk configs'",
+      "description": "Create risk management configuration files"
+    },
+    "setup:infra": {
+      "command": "echo 'Setting up AWS infrastructure'",
+      "description": "Configure AWS infrastructure and deployment pipeline"
+    },
+    "setup:infra:aws": {
+      "command": "echo 'Setting up AWS services'",
+      "description": "Configure AWS services (EC2, RDS, etc.)"
+    },
+    "setup:infra:ci": {
+      "command": "echo 'Setting up CI/CD'",
+      "description": "Configure CI/CD pipeline"
+    },
+    "setup:infra:monitoring": {
+      "command": "echo 'Setting up monitoring'",
+      "description": "Configure AWS CloudWatch and monitoring"
+    },
+    "dev": {
+      "command": "echo 'Starting development server'",
+      "description": "Start development environment"
+    },
+    "dev:server": {
+      "command": "echo 'Starting dev server'",
+      "description": "Start development server"
+    },
+    "dev:watch": {
+      "command": "echo 'Starting file watcher'",
+      "description": "Start file watching for hot reload"
+    },
+    "test": {
+      "command": "echo 'Running tests'",
+      "description": "Run test suite"
+    },
+    "test:unit": {
+      "command": "echo 'Running unit tests'",
+      "description": "Run unit test suite"
+    },
+    "test:integration": {
+      "command": "echo 'Running integration tests'",
+      "description": "Run integration test suite"
+    },
+    "test:performance": {
+      "command": "echo 'Running performance tests'",
+      "description": "Run performance test suite"
+    },
+    "build": {
+      "command": "echo 'Building project'",
+      "description": "Build project for production"
+    },
+    "build:compile": {
+      "command": "echo 'Compiling source'",
+      "description": "Compile source code"
+    },
+    "build:optimize": {
+      "command": "echo 'Optimizing build'",
+      "description": "Optimize production build"
+    },
+    "build:package": {
+      "command": "echo 'Packaging build'",
+      "description": "Package build artifacts"
+    },
+    "deploy": {
+      "command": "echo 'Deploying to production'",
+      "description": "Deploy to production environment"
+    },
+    "deploy:prepare": {
+      "command": "echo 'Preparing deployment'",
+      "description": "Prepare deployment package"
+    },
+    "deploy:backup": {
+      "command": "echo 'Backing up current version'",
+      "description": "Backup current production version"
+    },
+    "deploy:release": {
+      "command": "echo 'Releasing new version'",
+      "description": "Release new version to production"
+    },
+    "deploy:verify": {
+      "command": "echo 'Verifying deployment'",
+      "description": "Verify successful deployment"
+    },
+    "market-making": {
+      "command": "echo 'Starting market making engine'",
+      "description": "Run market making engine"
+    },
+    "market-making:core": {
+      "command": "echo 'Starting core engine'",
+      "description": "Start core market making engine"
+    },
+    "market-making:orderbook": {
+      "command": "echo 'Starting orderbook analysis'",
+      "description": "Start orderbook analysis component"
+    },
+    "market-making:pricing": {
+      "command": "echo 'Starting pricing engine'",
+      "description": "Start pricing calculation engine"
+    },
+    "market-making:bitmart": {
+      "command": "echo 'Starting BitMart market making'",
+      "description": "Run BitMart market making component"
+    },
+    "market-making:bitmart:auth": {
+      "command": "echo 'Setting up BitMart auth'",
+      "description": "Configure BitMart authentication"
+    },
+    "market-making:bitmart:orders": {
+      "command": "echo 'Starting BitMart order management'",
+      "description": "Start BitMart order management"
+    },
+    "market-making:bitmart:stream": {
+      "command": "echo 'Starting BitMart websocket'",
+      "description": "Start BitMart websocket connection"
+    },
+    "market-making:bybit": {
+      "command": "echo 'Starting Bybit hedging'",
+      "description": "Run Bybit hedging component"
+    },
+    "market-making:bybit:auth": {
+      "command": "echo 'Setting up Bybit auth'",
+      "description": "Configure Bybit authentication"
+    },
+    "market-making:bybit:hedge": {
+      "command": "echo 'Starting Bybit hedging'",
+      "description": "Start Bybit hedging execution"
+    },
+    "market-making:bybit:stream": {
+      "command": "echo 'Starting Bybit websocket'",
+      "description": "Start Bybit websocket connection"
+    },
+    "risk": {
+      "command": "echo 'Starting risk management system'",
+      "description": "Run risk management system"
+    },
+    "risk:position": {
+      "command": "echo 'Starting position monitoring'",
+      "description": "Start position monitoring"
+    },
+    "risk:exposure": {
+      "command": "echo 'Starting exposure monitoring'",
+      "description": "Start exposure monitoring"
+    },
+    "risk:limits": {
+      "command": "echo 'Starting limit monitoring'",
+      "description": "Start trading limit monitoring"
+    },
+    "risk:emergency": {
+      "command": "echo 'Starting emergency system'",
+      "description": "Start emergency procedures"
+    },
+    "analytics": {
+      "command": "echo 'Starting analytics platform'",
+      "description": "Run analytics and monitoring platform"
+    },
+    "analytics:collect": {
+      "command": "echo 'Starting data collection'",
+      "description": "Start analytics data collection"
+    },
+    "analytics:process": {
+      "command": "echo 'Starting data processing'",
+      "description": "Start analytics data processing"
+    },
+    "analytics:report": {
+      "command": "echo 'Starting reporting'",
+      "description": "Start analytics reporting"
+    },
+    "analytics:dashboard": {
+      "command": "echo 'Starting dashboard'",
+      "description": "Start analytics dashboard"
+    },
+    "data": {
+      "command": "echo 'Starting data pipeline'",
+      "description": "Run market data collection pipeline"
+    },
+    "data:collect": {
+      "command": "echo 'Starting data collection'",
+      "description": "Start market data collection"
+    },
+    "data:process": {
+      "command": "echo 'Starting data processing'",
+      "description": "Start market data processing"
+    },
+    "data:store": {
+      "command": "echo 'Starting data storage'",
+      "description": "Start market data storage"
+    },
+    "data:backup": {
+      "command": "echo 'Starting data backup'",
+      "description": "Start market data backup"
+    },
+    "monitor": {
+      "command": "echo 'Starting system monitoring'",
+      "description": "Run system monitoring and alerting"
+    },
+    "monitor:system": {
+      "command": "echo 'Starting system metrics'",
+      "description": "Start system metrics monitoring"
+    },
+    "monitor:performance": {
+      "command": "echo 'Starting performance monitoring'",
+      "description": "Start performance monitoring"
+    },
+    "monitor:alerts": {
+      "command": "echo 'Starting alert system'",
+      "description": "Start alert system"
+    },
+    "clean": {
+      "command": "echo 'Cleaning build artifacts'",
+      "description": "Clean build artifacts and temporary files"
+    }
+  },
+  "watch": {
+    "ignore": [
+      "node_modules/**",
+      ".git/**",
+      "*.log",
+      "dist/**",
+      "build/**"
+    ]
+  },
+  "notifications": {
+    "enabled": true,
+    "onSuccess": true,
+    "onFailure": true
+  }
+} 
