@@ -20,7 +20,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "taskmaster": "^0.1.0"
+    "taskmaster": "^0.0.3"
   },
   "devDependencies": {
     "@types/jest": "^29.5.0",
